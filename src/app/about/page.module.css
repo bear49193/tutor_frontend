@@ -1,0 +1,25 @@
+.heroContainer {
+    position: relative;
+}
+.content {
+
+}
+.content h1 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+.content p {
+    text-align: center;
+}
+.content a {
+    text-align: center;
+}
+.rightArrow {
+
+}
+.heroImg {
+    object-fit: contain;
+    position: absolute;
+    top: 20px;
+    left: 0;
+}

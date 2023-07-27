@@ -1,0 +1,278 @@
+.container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 50% 50%;
+}
+.leftSide {
+    background-color: #F8FBFB;
+    height: 100%;
+    padding-top: 4rem;
+}
+.signInImg {
+    width: 28.4rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.leftSide h5 {
+    color: #0E0F0F;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    padding-left: 8.5vw;
+    padding-right: 8.5vw;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+.leftSide p {
+    font-size: 0.9rem;
+    color: #828787;
+    text-align: center;
+    padding-left: 8.5vw;
+    padding-right: 8.5vw;
+}
+
+.rightSide {
+    background-color: #FFFFFF;
+    padding-left: 8.5vw;
+    padding-right: 8.5vw;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.firstportion {
+    margin-bottom: 1.5rem;
+}
+.firstportion h3 {
+    color: #27E0F6;
+    font-size: 2.25rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.4rem;
+}
+.firstportion h4 {
+    color: #0E0F0F;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 0.45rem;
+}
+.firstportion p {
+    color: #828787;
+    text-align: center;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+.secondportion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.75rem;
+}
+.secondportion a {
+    background-color: transparent;
+    border: 1px solid #DCDCDC;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.68rem 3.55vw;
+    transition: background-color 0.3s ease-in-out;
+}
+.secondportion a:hover {
+    background-color: #F9F9F9;
+    cursor: pointer;
+}
+.corporateLogo {
+    object-fit: contain;
+    width: 18px;
+}
+.secondportion p {
+    color: #0F172A;
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+.thirdportion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.25rem;
+}
+.thirdportion hr {
+    width: 8.75vw;
+}
+.thirdportion p {
+    color: #828787;
+    font-size: 0.9rem;
+    text-align: center;
+}
+.fourthportion {
+    margin-bottom: 3rem;
+}
+.inputHolder {
+    position: relative;
+}
+.inputHolder input {
+    color: #202020;
+    border: 1px solid #DCDCDC;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline-color: #d4f9fd;
+    width: 100%;
+    padding: 0.45rem 1rem 0.45rem 2.7rem;
+}
+.inputHolder:first-child {
+    margin-bottom: 1rem;
+}
+.mailIcon {
+    object-fit: contain;
+    width: 20px;
+    position: absolute;
+    top: 0.66rem;
+    left: 0.85rem;
+}
+.lockIcon {
+    object-fit: contain;
+    width: 14.5px;
+    position: absolute;
+    top: 0.66rem;
+    left: 1.1rem;
+}
+.eyeOffIcon {
+    object-fit: contain;
+    width: 18px;
+    position: absolute;
+    top: 0.66rem;
+    right: 1.1rem;
+}
+.formInner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.8rem 0;
+}
+.formInner input {
+    border: 1px solid #DCDCDC;
+    border-radius: 10px;
+    outline-color: #d4f9fd;
+    margin-right: 0.65rem;
+}
+.formInner input:hover {
+    cursor: pointer;
+}
+.formInner label {
+    color: #202020;
+    font-size: 0.89rem;
+    vertical-align: text-top;
+}
+.formInner p a {
+    color: #27E0F6;
+    transition: color 0.3s ease-in-out;
+}
+.formInner p a:hover {
+    color: #1fb3c5;
+    cursor: pointer;
+}
+.fourthportion button {
+    background-color: #27E0F6;
+    color: #FFFFFF;
+    font-weight: 700;
+    border-radius: 10px;
+    width: 100%;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+.fifthportion {
+    color: #828787;
+    text-align: center;
+}
+.fifthportion a {
+    color: #27E0F6;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+.fifthportion a:hover {
+    color: #1fb3c5;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1155px) {
+    .secondportion a {
+        padding: 0.68rem 3.1vw;
+    }
+}
+@media only screen and (max-width: 1060px) {
+    .secondportion a {
+        padding: 0.67rem 2.7vw;
+    }
+}
+@media only screen and (max-width: 1025px) {
+    .secondportion a {
+        padding: 0.6rem 2.6vw;
+    }
+    .thirdportion hr {
+        width: 7.5vw;
+    }
+}
+@media only screen and (max-width: 945px) {
+    .secondportion a {
+        padding: 0.5rem 2.2vw;
+    }
+    .thirdportion hr {
+        width: 7vw;
+    }
+}
+@media only screen and (max-width: 880px) {
+    .secondportion a {
+        padding: 0.5rem 1.9vw;
+    }
+}
+@media only screen and (max-width: 860px) {
+    .container {
+        grid-template-columns: auto;
+    }
+    .rightSide {
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+    .secondportion a {
+        padding: 0.68rem 13vw;
+    }
+    .thirdportion hr {
+        width: 35%;
+    }
+}
+@media only screen and (max-width: 740px) {
+    .secondportion a {
+        padding: 0.68rem 11.75vw;
+    }
+}
+@media only screen and (max-width: 630px) {
+    .secondportion a {
+        padding: 0.68rem 10.75vw;
+    }
+    .thirdportion hr {
+        width: 30%;
+    }
+}
+@media only screen and (max-width: 560px) {
+    .secondportion a {
+        padding: 0.68rem 9.75vw;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .secondportion a {
+        padding: 0.68rem 6.75vw;
+    }
+    .thirdportion hr {
+        width: 23%;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .thirdportion hr {
+        width: 18%;
+    }
+}
+@media only screen and (max-width: 300px) {
+    .secondportion a {
+        padding: 0.68rem 3vw;
+    }
+}

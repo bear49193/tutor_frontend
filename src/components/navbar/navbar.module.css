@@ -1,0 +1,284 @@
+.container {
+    background-color: #FFFFFF;
+    height: 5.3rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+.innerContainer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 6.5vw;
+    padding-right: 6.5vw;
+    position: relative;
+}
+.logo {
+    object-fit: contain;
+    width: 19.39vw;
+} 
+.menu {
+    display: flex;
+    gap: 2.1vw;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.menuItem {
+    color: #828787;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    position: relative;
+    padding-left: 0.3vw;
+    padding-right: 0.3vw;
+    transition: color 0.3s ease;
+}
+.menuItem::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    z-index: 20;
+    background-color: #27E0F6;
+    height: 3px;
+    width: 0;
+    transition: width 0.3s ease;
+}
+.menuItem:hover {
+    color: #000000;
+    cursor: pointer;
+}
+.menuItem:hover::after {
+    width: 100%;
+}
+.active {
+    color: #0E0F0F;
+}
+.active:hover {
+    cursor: default;
+}
+.active:hover::after {
+    width: 0;
+}
+.callToAction {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.9rem;
+} 
+.authBtn {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    padding: 0.3rem 1.1rem;
+    border: 0.125rem solid #27E0F6;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+} 
+.authBtn:hover {
+    background-color: #27E0F6;
+    cursor: pointer;
+}
+.authIcon {
+    height: 0.9rem;
+}
+.authText {
+    color: #0E0F0F;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.menuIconOuter {
+    display: none;
+}
+.bottomLayer {
+    background-image: linear-gradient(to top, #F8F8F8, #FFFFFF);
+    height: 0.9rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+}
+
+@media only screen and (max-width: 1170px) {
+    .logo {
+        width: 18vw;
+    }
+    .menu {
+        gap: 1.7vw;
+    }
+    .authBtn {
+        padding: 0.3rem 0.85rem;
+    } 
+}
+@media only screen and (max-width: 1070px) {
+    .logo {
+        width: 16vw;
+    }
+
+    .menu {
+        gap: 1.5vw;
+    }
+    .callToAction {
+        gap: 0.65rem;
+    }
+    .authBtn {
+        padding: 0.3rem 0.6rem;
+    }
+}
+@media only screen and (max-width: 950px) {
+    .logo {
+        width: 14vw;
+    }
+
+    .menu {
+        gap: 1.3vw;
+    }
+    .menuItem {
+        font-size: 0.98rem;
+    }
+    .callToAction {
+        gap: 0.55rem;
+    }
+    .authBtn {
+        padding: 0.3rem 0.5rem;
+    }
+    .authText {
+        font-size: 0.98rem;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .menuItem {
+        font-size: 0.95rem;
+    }
+    .authText {
+        font-size: 0.95rem;
+    }
+    .authBtn {
+        padding: 0.28rem 0.4rem;
+    }
+}
+@media only screen and (max-width: 860px) {
+    .logo {
+        width: 30vw;
+    } 
+    .navigation {
+        height: 14.125rem;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #d4f9fd;
+        z-index: 2000;
+        padding-top: 1.55rem;
+        padding-left: 6.5vw;
+        padding-right: 6.5vw;
+        display: none;
+    }
+    .collapsedNavigation {
+        display: initial;
+        animation: collapse-navbar 0.1s ease;
+    }
+    @keyframes collapse-navbar {
+        0% {
+            height: 0;
+        }
+        100% {
+            height: 14.125rem;
+        }
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 0.98rem;
+    }
+    .menuItem {
+        color: #0E0F0F;
+        font-size: 1rem;
+        font-weight: 500;
+        transition: font-size 0.3s ease-in-out;
+    }
+    .menuItem:hover {
+        color: #000000;
+        font-size: 1.01rem;
+        cursor: pointer;
+    }
+    .active {
+        color: #000000;
+        font-weight: 600;
+    }
+    .callToAction {
+        height: 5.25rem;
+        width: 100%;
+        position: absolute;
+        background-color: #d4f9fd;
+        top: calc(100% + 14.125rem);
+        left: 0;
+        right: 0;
+        z-index: 2000;
+        display: none;
+    }
+    .collapsedCallToAction {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 1rem;
+        animation: collapse-call-action 0.2s ease-in;
+    }
+    @keyframes collapse-call-action {
+        0% {
+            background-color: #FFFFFF;
+            height: 0;
+        }
+        100% {
+            background-color: #d4f9fd;
+            height: 5.25rem;
+        }
+    }
+
+    .authBtn {
+        padding: 0 6.9vw;
+        border: none;
+        margin-top: -0.25rem;
+    } 
+    .authIcon {
+        display: none;
+    }
+    .authText {
+        color: #0E0F0F;
+        font-size: 1rem;
+        transition: font-size 0.3s ease-in-out;
+    }
+    .authBtn:hover .authText {
+        color: #000000;
+        font-size: 1.04rem;
+        cursor: pointer;
+    }
+    .menuIconOuter {
+        display: block;
+    }
+    .menuIconOuter:hover {
+        cursor: pointer;
+    }
+    .menuIcon {
+        width: 4.25vw;
+    }
+    .closeIcon {
+        width: 3.5vw;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .logo {
+        width: 45vw;
+    }
+    .menuIcon {
+        width: 6.75vw;
+    }
+    .closeIcon {
+        width: 6.25vw;
+    }
+}
